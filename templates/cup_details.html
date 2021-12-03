@@ -1,0 +1,58 @@
+﻿<style>
+#myImage {
+    opacity : 0.5;
+    filter: alpha(opacity=40); // msie
+}
+</style>
+
+<table width="100%" cellspacing="$cellspacing" cellpadding="$cellpadding" bgcolor="$border">
+	<tr> 
+		<td class="title" colspan="2"><img src="images/games/$ds[game].gif" width="13" height="13" border="0">&nbsp;$ds[name] $ladder_abbrev <a href="#dt" name="dt" class="show_hide_dt"><img src="images/cup/icons/arrow_up_down.gif" align="right"></a></td>
+	</tr>
+</table>
+
+
+
+<div class="slidingDiv_dt"> 
+<table width="100%" cellspacing="$cellspacing" cellpadding="$cellpadding" bgcolor="$border">
+        $show_gs_info
+	$ladder_platform
+	<tr>
+		<td bgcolor="$bg1" width="20%"><img src="images/cup/icons/type_size.png"> <strong>Type</strong></td>
+		<td bgcolor="$bg1">$ds[$typ_e] $elimination_type</td>
+	</tr>
+        $show_prts
+	<tr>
+		<td bgcolor="$bg1"><img src="images/cup/icons/date.png"> <strong>Start</strong></td>
+		<td bgcolor="$bg1">$start</td>
+	</tr>
+	$l_ended
+	<tr>
+		<td bgcolor="$bg1"><img src="images/cup/icons/time.png"> <strong>Timezone</strong></td>
+		<td bgcolor="$bg1">$gmt</td>
+	</tr>
+	$rl_checkin_date
+	$ladder_details
+        $gametype
+        $show_score_ratio
+        $show_skill_level
+	$cups_s_admins
+	<tr>
+		<td bgcolor="$bg1"><img src="images/cup/icons/checkin.png"> <strong>Status</strong></td>
+		<td bgcolor="$bg1">$status</td>
+	</tr>
+	<tr>
+		<td bgcolor="$bg1"><img src="images/cup/icons/edit.png" width="16" height="16"> <strong>Gameaccount</strong></td>
+		<td bgcolor="$bg1">
+		<input type="button" value="$gameacc" onClick="window.location='?site=myprofile&action=gameaccounts'"></td>
+	</tr>
+</table>
+</div>
+$show_desc
+<br>
+$groups_table
+$winners
+$credits_table
+$challinfo_table
+$awards_table
+$tb_legend

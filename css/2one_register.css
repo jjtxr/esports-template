@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*/////////////////////////*/
+/* 2ONE REGISTER MOD START */
+/*/////////////////////////*/
+#step {
+	margin: 10px 0 40px;
+	padding: 0;
+}
+#step li {
+	padding: 3px 0 6px 110px;
+	margin: 0 0 20px;
+	list-style: none;
+}
+#step h3 {
+	width: 88%;
+	border-bottom: 1px dashed #DFE1E1;
+	padding: 5px;
+	margin-bottom: 12px;
+}
+#step .item1 {
+  background: url(../Bilder/arrow_step1.png) no-repeat;
+}
+#step .item2 {
+  background: url(../Bilder/arrow_step2.png) no-repeat;
+}
+#step .item3 {
+  background: url(../Bilder/arrow_step3.png) no-repeat;
+}
+.border_1 {
+	border-bottom: 1px solid #E2E2E2;
+	padding: 6px;
+}
+.border_2 {
+	padding: 6px;
+}

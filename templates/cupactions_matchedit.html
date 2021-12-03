@@ -1,0 +1,34 @@
+<form action="?site=cupactions&action=match_edit&$typename2=$cupID&clanID=$clanID&matchID=$matchID" method="post" name="post">
+	<table width="100%" cellspacing="$cellspacing" border="0" cellpadding="$cellpadding" bgcolor="$border">
+		<tr> 
+			<td align="center" class="title">%matchdetails_edited_title%</td>
+		</tr>
+        <tr>
+			<td colspan="2" bgcolor="$pagebg"></td>
+        </tr>
+		<tr>
+			<td bgcolor="$bg1">
+				<table width="100%" border="0" align="center" cellpadding="$cellpadding" cellspacing="$cellspacing">
+					<tr> 
+						<td>Server:</td>
+						<td><input name="server" type="text" class="form_off" id="server" onFocus="this.className='form_on\'" onBlur="this.className='form_off'" value="$server" size="35"></td>
+					</tr>
+					<tr> 
+						<td>HLTV:</td>
+						<td><input name="hltv" type="text" class="form_off" id="hltv" onFocus="this.className='form_on\'" onBlur="this.className='form_off'" value="$hltv" size="35"></td>
+					</tr>
+					<tr> 
+						<td valign="top">Report:</td>
+						<td colspan="2" valign="top"><textarea name="report" cols="50%" rows="11" class="form_off" onFocus="this.className=\'form_on\'" onBlur="this.className=\'form_off\'">$report</textarea></td>
+					</tr>
+					<tr> 
+						<td colspan="3"><hr noshade size="1" color="$border"></td>
+					</tr>
+					<tr>
+						<td colspan="3" align="right"><input name="submit" type="submit" value="%save%"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</form>

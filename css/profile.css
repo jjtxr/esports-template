@@ -1,0 +1,60 @@
+@charset "utf-8";
+/******************************************
+ *** 		2ONE-PROFILE MOD			***
+ ***	Copyright by 2ONE-DESIGNS.DE	***
+ ******************************************/								
+#tab_profile {
+	padding: 6px;
+	background: url(../images/bg_profilebutt.png) repeat-x #FFF;
+	border: 1px solid #CECED1;
+	box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+}
+.border_1 {
+	border-bottom: 1px solid #CECED1;
+	padding: 6px;
+}
+.border_2 {
+	padding: 6px;
+}
+#profile_button {
+	background: url(../images/bg_profilebutt.png) repeat-x;
+	border: 1px solid #CECED1;
+	float: right; 
+	padding: 5px;
+	margin-left: 5px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+#profile_button:hover {
+	background: url(../images/bg_profilebutt_hov.png) repeat-x;
+}
+.profile_title {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #A7A7A6;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #A1A1A1;
+  padding-bottom: 5px;
+}
+a.profile_butt, a.profile_butt:visited, a.profile_butt:active {
+  font-size: 12px;
+  color: #AEAFAD;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+a.profile_butt:hover {
+  color: #737373;
+  text-decoration: none;
+  font-weight: bold;
+}

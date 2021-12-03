@@ -1,0 +1,86 @@
+@charset "utf-8";
+/**************************************************
+ *** 	Files MOD								***
+ ***	Copyright by Pg-designs.net				***
+ ***	Copyright by addons-webspell.org		***
+ **************************************************/								
+.tab_2 {
+	padding: 6px;
+	background: url(../images/bg_files.png) repeat-x #FFF;
+	border: 1px solid #CECED1;
+	box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tab_3 {
+	padding: 6px;
+	background: url(../images/bg_files.png) repeat-x #FFF;
+	border: 1px solid #CECED1;
+	float:right;
+	margin:0px 10px 0px 10px;
+	box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tab_4 {
+	padding: 6px;
+	background: url(../images/bg_files.png) repeat-x #FFF;
+	border: 1px solid #CECED1;
+	text-align:center;
+	box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.border_1 {
+	border-bottom: 1px solid #CECED1;
+	padding: 6px;
+	text-align:left;
+}
+
+.border_3 {
+	border-bottom: 1px solid #CECED1;
+	padding: 6px;
+	text-align:right;
+}
+
+.border_4 {
+	padding: 6px;
+
+}
+
+
+.border_5 {
+	padding: 6px;
+	text-align:right;
+}
+
+.rapic {
+	text-align:left;
+	float:left;
+	margin:3px 5px 3px 5px;
+}
+
+.border_2 {
+	padding: 6px;
+	text-align:left;
+}
+
+.files_title {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #000000;
+  text-align:left;
+  text-transform: none;
+  border-bottom: 1px solid #A1A1A1;
+  padding-bottom: 5px;
+}
+
+.clr { 
+	clear:both; 
+	padding:0; 
+	margin:0; 
+	background:none;
+}

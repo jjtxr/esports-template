@@ -1,0 +1,48 @@
+<form action="clans&amp;action=ergebnis_eintragen&amp;clan1=$clanID&amp;id=$matchid" method="post" name="post">
+  <table width="100%" border="0" cellspacing="$cellspacing" cellpadding="$cellpadding" >
+    <tr> 
+      <td align="center" class="title">%cup_match_matchein%</td>
+    </tr>
+    <tr> 
+      <td bgcolor="#eeeeee">
+	  <table width="100%" border="0" align="center" cellpadding="$cellpadding" cellspacing="$cellspacing">
+	    <tr>
+          <td width="24%">%cup_matches_date%</td>
+	      <td colspan="2">$date</td>
+	    </tr>
+          <tr>
+            <td>%cup_match_geg%:</td>
+            <td colspan="2">$gegner</td>
+          </tr>
+          <tr>
+            <td>%cup_matches_server%</td>
+            <td colspan="2">$server</td>
+          </tr>
+          <tr>
+            <td>%cup_match_hltvserver%</td>
+            <td colspan="2">$hltv</td>
+          </tr>
+          <tr> 
+            <td>%cup_match_score%</td>
+            <td width="16%"><input name="score1" type="text" id="score1" size="3" /></td>
+            <td width="60%">%cup_match_scoregeg%
+              <input name="score2" type="text" id="score2" size="3" /></td>
+          </tr>
+          <tr> 
+            <td colspan="3"><hr noshade size="1" color="$border" /></td>
+          </tr>
+          <tr> 
+            <td valign="top">%cup_match_report%</td>
+            <td colspan="2" valign="top"><textarea name="report" cols="80" rows="11"></textarea></td>
+          </tr>
+          <tr> 
+            <td colspan="3"><hr noshade size="1" color="$border" /></td>
+          </tr>
+          <tr>
+            <td colspan="3" align="right"><input name="match" type="hidden" id="match" value="eintrag" />
+            <input name="post" type="submit" value="%cup_match_eintragen%" />			   </td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</form>

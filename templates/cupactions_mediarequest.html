@@ -1,0 +1,27 @@
+<form action="?site=cupactions&action=mediarequest&$typename2=$cupID&clanID=$clanID&matchID=$matchID" method="post" name="post">
+	<table width="100%" cellspacing="$cellspacing" border="0" cellpadding="$cellpadding" bgcolor="$border">
+		<tr> 
+			<td align="center" class="title">%matchmedia_requested_title%</td>
+		</tr>
+		<tr>
+			<td colspan="2" bgcolor="$pagebg"></td>
+        </tr>
+		<tr>
+			<td bgcolor="$bg1">
+				<table width="100%" border="0" align="center" cellpadding="$cellpadding" cellspacing="$cellspacing">
+					<tr> 
+						<td>Text:</td>
+						<td><input name="reason" type="text" class="form_off" id="reason" onFocus="this.className='form_on'" onBlur="this.className='form_off'" size="35"></td>
+					</tr>
+					<tr> 
+						<td colspan="3"><hr noshade size="1" color="$border"></td>
+					</tr>
+					<tr>
+						<td colspan="3" align="right">
+						<input name="post" type="submit" value="%save%"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</form>

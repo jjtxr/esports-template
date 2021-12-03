@@ -1,0 +1,77 @@
+<head>
+  <style>.tooltip { position: absolute; display: none; background-color: #ffffff; border: 1px solid $border; padding:2px; }</style>
+  <script language="javascript">wmtt = null; document.onmousemove = updateWMTT; function updateWMTT(e) { x = (document.all) ? window.event.x + document.body.scrollLeft : e.pageX; y = (document.all) ? window.event.y + document.body.scrollTop  : e.pageY; if (wmtt != null) { wmtt.style.left=(x + 20) + "px"; wmtt.style.top=(y + 20) + "px"; } } function showWMTT(id) {	wmtt = document.getElementById(id);	wmtt.style.display = "block" } function hideWMTT() { wmtt.style.display = "none"; }</script>
+
+  <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+
+  <script type="text/javascript" src="js/mootools.js"></script>
+  <script type="text/javascript" src="js/formcheck.js"></script>
+
+  <script type="text/javascript">
+	window.addEvent('domready', function(){check = new FormCheck('third', {
+		display : {
+			fadeDuration : 500,
+			errorsLocation : 1,
+			indicateErrors : 1,
+			showErrors : 1
+		}
+	})});
+  </script>
+</head>
+
+<div class="tooltip" id="cuphelp_1" align="left">The team name, which will be shown in the cup.<br /><b>Example: Cupteam DO NOT include quotes!</b></div><div class="tooltip" id="cuphelp_2" align="left">A shortname of the Team name.<br /><b>Example: CPT - this will be shown on brackets.</b></div><div class="tooltip" id="cuphelp_3" align="left">The Clantag of the Team, which you use ingame.<br /><b>Example: [Cupteam]</b></div><div class="tooltip" id="cuphelp_4" align="left">A valid adress of your teams website.<br /><b>Example: http://www.thecupteam.com</b></div><div class="tooltip" id="cuphelp_5" align="left">The Team logo, which will be shown under Teams.<br /><b>optimal size: 100*100 Pixel (Please no logo from ESL)</b></div><div class="tooltip" id="cuphelp_6" align="left">The password for members who are going to join the Team.<br /><b>Recommendation: min. 6 Characters, for more security</b></div><div class="tooltip" id="cuphelp_7" align="left">The server info for members who are going to join the server.<br /><b>Recommendation: connect (IP:PORT)</b></div>
+<form method="post" name="post" action="?site=clans" id="third" class="niceform">
+	<table width="100%" border="0" cellspacing="$cellspacing" cellpadding="$cellpadding" bgcolor="$border">
+
+		<tr> 
+			<td colspan="2" height="20" class="title">&nbsp; &#8226; $clan_title </td>
+		</tr>
+		<tr> 
+			<td colspan="2" bgcolor="$pagebg"></td>
+		</tr>
+		<tr> 
+			<td align="right" bgcolor="$bg1">Team name: <font color="red"><b>*</b></font></td>
+			<td bgcolor="$bg1"><input name="name" type="text" class="validate['required','length[3,-1]','alphanum']" id="name" onFocus="this.className='form_on'" onBlur="this.className='form_off'" value="$db[name]" maxlength="20"> <a style="text-decoration:none; cursor:help" onmouseover="showWMTT('cuphelp_1')" onmouseout="hideWMTT()">(?)</a></td>
+		</tr>
+		<tr> 
+			<td align="right" bgcolor="$bg1">Bracket Name: <font color="red"><b>*</b></font></td>
+			<td bgcolor="$bg1"><input name="short" type="text" class="validate['required','length[3,-1]']" id="short" onFocus="this.className='form_on'" onBlur="this.className='form_off'" value="$db[short]" maxlength="15"> <a style="text-decoration:none; cursor:help" onmouseover="showWMTT('cuphelp_2')" onmouseout="hideWMTT()">(?)</a></td>
+		</tr>
+		<tr> 
+			<td align="right" bgcolor="$bg1">Team-Tag: <font color="red"><b>*</b></font></td>
+			<td bgcolor="$bg1"><input name="clantag" type="text" class="validate['required','length[2,-1]']" id="clantag" onFocus="this.className='form_on'" onBlur="this.className='form_off'" value="$db[clantag]" maxlength="8"> <a style="text-decoration:none; cursor:help" onmouseover="showWMTT('cuphelp_3')" onmouseout="hideWMTT()">(?)</a></td>
+		</tr>
+		<tr> 
+			<td align="right" bgcolor="$bg1">Homepage: </td>
+			<td bgcolor="$bg1"><input name="clanhp" type="text" class="validate['length[3,-1]','url']" id="clanhp" value="$homepage"  onFocus="this.className='form_on'" onBlur="this.className='form_off'" maxlength="40"> <a style="text-decoration:none; cursor:help" onmouseover="showWMTT('cuphelp_4')" onmouseout="hideWMTT()">(?)</a></td>
+		</tr>
+		<tr>
+			<td align="right" bgcolor="$bg1">Team logo: </td>
+			<td bgcolor="$bg1"><input name="clanlogo" type="text" class="validate['length[7,-1]','url']" id="clanlogo" onfocus="this.className='form_on'" onblur="this.className='form_off'" value="$logo" size="34" maxlength="100"/> <a style="text-decoration:none; cursor:help" onmouseover="showWMTT('cuphelp_5')" onmouseout="hideWMTT()">(?)</a></td>
+		</tr>
+		<tr>
+			<td align="right" bgcolor="$bg1">Server Connect: </td>
+			<td bgcolor="$bg1"><input name="server" type="server" class="validate['length[9,-1]','digitmin']" id="server" onfocus="this.className='form_on'" onblur="this.className='form_off'" value="$db[server]" maxlength="22" />:<input name="port" type="port" id="port" onfocus="this.className='form_on'" onblur="this.className='form_off'" value="$dbport" maxlength="6" size="6" />
+			<a style="text-decoration:none; cursor:help" onmouseover="showWMTT('cuphelp_7')" onmouseout="hideWMTT()">(?)</a> (IP:PORT Only!)</td>
+		</tr>
+		<tr>
+			<td align="right" bgcolor="$bg1">Team-Password: <font color="red"><b>*</b></font></td>
+			<td bgcolor="$bg1"><input name="password" type="password" class="validate['required','length[3,-1]','alphanum']" id="password" onfocus="this.className='form_on'" onblur="this.className='form_off'" maxlength="30" /> <a style="text-decoration:none; cursor:help" onmouseover="showWMTT('cuphelp_6')" onmouseout="hideWMTT()">(?)</a></td>
+		</tr>
+
+		$leadmember<br>
+                <tr bgcolor="$bg1">
+			<td align="right" >Team-Country: <font color="red"><b>*</b></font></td>
+			<td bgcolor="$bg1"><select name="flag" onchange="document.getElementById('county').src='images/flags/'+this.options[this.selectedIndex].value+'.gif'">$countries</select> $country</td>
+                </tr>
+		$delteam
+		<tr>
+			<td align="right" bgcolor="$bg1"><b>Note:</b></td>
+			<td bgcolor="$bg1">$show_note</td>
+		</tr>
+		<tr bgcolor="$bg1">
+			<td>&nbsp;</td>
+			<td><input name="$typ" type="submit" id="$typ" value="$button"><input name="clanID" type="hidden" value="$db[ID]" /></td>
+		</tr>
+	</table>
+</form>

@@ -1,0 +1,84 @@
+<head>
+<style type="text/css">
+.style1 {
+	text-align: left;
+}
+.style2 {
+	text-align: center;
+}
+</style>
+</head>
+
+<form action="?site=cupactions&action=confirmscore&clanID=$clanID&matchID=$matchID&$typename2=$cupID$name2" method="post" name="post">
+	<table width="100%" cellspacing="$cellspacing" border="0" cellpadding="$cellpadding" bgcolor="$border">
+    <tr> 
+		<td align="center" class="title">%confirm_title%</td>
+    </tr>
+	<tr>
+		<td colspan="2" bgcolor="$pagebg"></td>
+    </tr>
+    <tr> 
+		<td bgcolor="$bg1">
+			<table width="100%" border="0" align="center" cellpadding="$cellpadding" cellspacing="$cellspacing">
+				<tr>
+					<td style="width: 100px">%date%</td>
+					<td colspan="3">$date</td>
+					<td colspan="4" align="right">$status</td>
+				</tr>
+				<tr>
+					<td style="width: 100px">%opponent%:</td>
+					<td colspan="7">$gegner</td>
+				</tr>
+				<tr>
+					<td style="width: 100px">Server:</td>
+					<td colspan="7">$server</td>
+				</tr>
+				<tr>
+					<td style="width: 100px">HLTV-Server:</td>
+					<td colspan="7">$hltv</td>
+				</tr>
+					<tr> 
+						<td style="width: 100px">%your% Score:</td>
+						<td colspan="3">$score1</td>
+						<td colspan="4">&nbsp;%opponent% Score: $score2</td>
+					  </tr>
+					<tr> 
+						<td colspan="8" align="center"><hr></td>
+					  </tr>
+							<tr>
+								<td bgcolor="$bg1" rowspan="2" align="center"">$map1_pic</td>
+								<td bgcolor="$bg1" class="style1">$round1_score1</td>
+								<td bgcolor="$bg1" class="style2" rowspan="2">$map2_pic</td>
+								<td bgcolor="$bg1" class="style1" >$round2_score1</td>
+								<td bgcolor="$bg1" class="style2" rowspan="2">$map3_pic</td>
+								<td bgcolor="$bg1" class="style1">$round3_score1</td>
+								<td bgcolor="$bg1" align="center" rowspan="2">$map4_pic</td>
+								<td bgcolor="$bg1">$round4_score1</td>
+							</tr>
+							<tr>
+								<td bgcolor="$bg1" class="style1" >$round1_score2</td>
+								<td bgcolor="$bg1" class="style1" >$round2_score2</td>
+								<td bgcolor="$bg1" class="style1">$round3_score2</td>
+								<td bgcolor="$bg1">$round4_score2</td>
+							</tr>
+							
+				<tr> 
+					<td valign="top" colspan="8" align="center"><hr></td>
+				</tr>
+							
+				<tr> 
+					<td valign="top" style="width: 100px">Report:</td>
+					<td colspan="7" valign="top">
+					<textarea name="report" rows="11" class="form_off" onFocus="this.className='form_on'" onBlur="this.className='form_off'" style="width: 400px"></textarea></td>
+				</tr>
+				<tr> 
+					<td colspan="8"><hr noshade size="1" color="$border"></td>
+				</tr>
+				<tr>
+					<td colspan="8" align="right"><a onclick="return confirm('Are you sure you wish to protest this match?');" href="?site=cupactions&action=protest&matchID=$matchID&clanID=$clanID&cupID=$cupID">Protest Match?</a> <input onclick="return confirm('Your score: $myscore -- Opponent score: $oppscore  Confirm Result?');" name="submit" type="submit" value="%confirm%"></td>
+				</tr>
+			</table>
+		</td>
+    </tr>
+  </table>
+</form>

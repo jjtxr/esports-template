@@ -1,0 +1,37 @@
+<form method="post" name="replychallenge" action="">
+ <table width="100%" border="0" cellspacing="4" cellpadding="4" bgcolor="$border">
+  <tr bgcolor="$bghead">
+    <td colspan="2" class="title" align="center">View challenge on $laddname</td>
+  </tr>
+  <tr bgcolor="$bghead">
+    <td colspan="2" class="title2">&nbsp; &#8226; Challenger Recorded:</td>
+  </tr>
+  	<tr>
+      <td bgcolor="$bg1" rowspan="2">Info:</td>
+	  <td bgcolor="$bg2">$challenger challenged $challenged</td>
+    </tr>
+  	 <tr>
+  	  <td bgcolor="$bg1">Recorded this challenge on <b>$date</b>$ago</td>
+    </tr>
+  	 <tr>
+  	  <td bgcolor="$bg1">Server/Port:</td>
+	  <td bgcolor="$bg2">$serverconn</td>
+    </tr>
+  	 <tr>
+  	  <td bgcolor="$bg1">Comments:</td>
+	  <td bgcolor="$bg2">$comments_challenger</td>
+    </tr>
+   <tr bgcolor="$bghead">
+    <td colspan="2" class="title2">&nbsp; &#8226; Challenged Responded:</td>
+  </tr>
+$status $reply_form
+   <tr bgcolor="$bghead">
+    <td colspan="2" class="title2">&nbsp; &#8226; Challenger Finalized:</td>
+  </tr>
+$finalized_status $warning $finalized_form
+   <tr>
+    <td bgcolor="$bg1">Status</td>
+    <td bgcolor="$bg1">$status2</td>
+  </tr>
+ </table>
+</form>

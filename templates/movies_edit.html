@@ -1,0 +1,6 @@
+<form action="index.php?site=movies&action=saveedit" method="post" name="saveedit"enctype="multipart/form-data">
+<table width="100%" cellspacing="1" cellpadding="2" bgcolor="$border">
+<tr bgcolor="$bghead"><td class="title" colspan="2">%edit% %movie%</td></tr>
+  <tr><td bgcolor="$bg1">%name%:</td><td bgcolor="$bg2"><input type="text" name="name" value="$ds[movheadline]"></td></tr>
+  <tr><td bgcolor="$bg1">%description%:</td><td bgcolor="$bg2"><textarea name="description" cols="60" rows="7">$ds[movdescription]</textarea></td></tr>
+  <tr><td bgcolor="$bg1"><input type="submit" value="save" name="saveedit"></td><td bgcolor="$bg2"><input type="hidden" value="$id" name="id"</td></tr></table></form>

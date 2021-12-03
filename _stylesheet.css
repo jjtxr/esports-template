@@ -1,0 +1,204 @@
+/* Main Layout */
+body {
+  font-family: Questrial;
+  font-size: 12px;
+  color: #fff;
+}
+
+img { border: none; }
+
+hr {
+  color: #dadada;
+  background-color: #dadada;
+  border: 0px;
+  border-top: transparent;
+  border-bottom: transparent;
+  margin: 2px 0;
+  height: 1px;
+}
+
+/* Links */
+a, a:visited, a:active {
+text-decoration:none;
+	color:#C72E00;
+	font-weight:bold;
+
+}
+
+a:hover {
+color:#D70000;
+}
+
+a.titlelink, a.titlelink:visited, a.titlelink:active {
+  color:#FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:12px;
+}
+
+a.titlelink:hover {
+color:#FFFFFF;
+  font-weight: bold;
+}
+
+a.category, a.category:visited, a.category:active {
+  color: #9BDD01;
+  text-decoration: none;
+}
+
+a.category:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+
+/* Font types */
+h2 {
+  font-size: 12px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+small {
+  color: #fff;
+  font-size: 9px;
+}
+
+.category_big, .category_big a {
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.category {
+  font-size: 11px;
+  color: #000000;
+  font-weight: normal;
+}
+
+/* Forms */
+form {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+input, textarea, select {
+border:1px solid #e0e0e0;font-size:12px;color:#2C2C2C;padding:6px 9px
+}
+
+input:active, textarea:active, select:active, input:focus, textarea:focus, select:focus {
+  border: 1px solid #CCCCCC;
+  background-color: #F6F6F6;
+  color: #2C2C2C;
+}
+
+input[type="radio"], input[type="checkbox"], 
+input[type="radio"]:focus, input[type="radio"]:active,
+input[type="checkbox"]:focus, input[type="checkbox"]:active {
+  border: 0px;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  margin: 2px;
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+border:1px solid #700000;
+background:#363636;
+font-size:12px;
+color:#fff;
+padding:6px 9px;
+}
+input[type="button"]:hover, input[type="submit"]:hover {
+background:#700000;
+}
+/* Infomessages - Miscellaneous */
+.tooltip {
+  position: absolute;
+  display: none;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #DDDDDD;
+  border-left: 4px solid #0E8AEA;
+  padding: 4px 10px;
+  z-index: 100;
+}
+
+.errorbox {
+  background-color: #FFCCCC;
+  border: 1px dashed #D60000;
+  color: #666666;
+  font-size: 10px;
+  width: 350px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* BBCode Tags */
+.quote {
+  color: #383838;
+  text-align: left;
+  font-size: 9px;
+  margin: 0 auto;
+  padding: 3px;
+}
+
+.list {
+	list-style-type: disc;
+	list-style-position:outside;
+}
+.list_num {
+	list-style-type: decimal;
+	list-style-position:outside;
+}
+
+.list_alpha {
+	list-style-type: lower-latin;
+	list-style-position:outside;
+}
+
+.code {
+  color: #000000;
+  text-align: left;
+  margin: 0 auto;
+  padding: 3px;
+  font-size: 10px;
+}
+
+.codeinner {
+  color: #000000;
+  font-size: 11px;
+}
+
+.codeline0 {
+	background-color: #F3F3F3;
+	height: 15px;
+	padding-left: 3px;
+	white-space: nowrap;
+}
+
+.codeline1 {
+	background-color: #FFFFFF;
+	height: 15px;
+	padding-left: 3px;
+	white-space: nowrap;
+}
+.action{padding:5px 0 0 0;text-align:right}
+
+
+.title {
+background:#101010;
+height:35px;
+line-height:35px;
+margin:0;
+		color:#fff;
+	font-size:17px;
+	text-transform:uppercase;
+	font-family:Jura;
+	padding-left:5px;
+}

@@ -1,0 +1,131 @@
+<table border="0" cellpadding="2" cellspacing="0" class="formtable">
+  <tr> 
+    <td>
+	  <a accesskey="b" href="javascript:AddB()"><img src="images/bbcode/bold.jpg" border="0" alt="Bold" /></a>
+      <a accesskey="u" href="javascript:AddU()"><img src="images/bbcode/underline.jpg" border="0" alt="Underline" /></a>
+      <a accesskey="i" href="javascript:AddI()"><img src="images/bbcode/italic.jpg" border="0" alt="Italic" /></a>
+      <a accesskey="s" href="javascript:AddS()"><img src="images/bbcode/strike.jpg" border="0" alt="Strike" /></a>
+      <a href="javascript:AddBgcolor()"><img src="images/bbcode/bgcolor.jpg" border="0" alt="Strike" /></a>
+      <a onmouseover="showWMTT('tooltip_caps')" onmouseout="hideWMTT()" href="javascript:AddCaps()"><img src="images/bbcode/all_caps.jpg" border="0" alt="All uppercase" /></a>
+      <a onmouseover="showWMTT('tooltip_low')" onmouseout="hideWMTT()" href="javascript:AddLow()"><img src="images/bbcode/all_lowercase.jpg" border="0" alt="All lowercase" /></a>
+      <a onmouseover="showWMTT('tooltip_spacing')" onmouseout="hideWMTT()" href="javascript:AddSpc()"><img src="images/bbcode/spacing.jpg" border="0" alt="Text spacing" /></a>
+      <img src="images/bbcode/spacer.png" border="0" width="2" alt="separate" />
+      <a onmouseover="showWMTT('tooltip_email')" onmouseout="hideWMTT()" accesskey="e" href="javascript:AddLink('EMAIL')"><img src="images/bbcode/email.jpg" border="0" alt="Email" /></a>
+      <a onmouseover="showWMTT('tooltip_url')" onmouseout="hideWMTT()" accesskey="w" href="javascript:AddLink('URL')"><img src="images/bbcode/link.jpg" border="0" alt="Link" /></a>
+      <a onmouseover="showWMTT('tooltip_img')" onmouseout="hideWMTT()" accesskey="p" href="javascript:AddImg()"><img src="images/bbcode/image.jpg" border="0" alt="Image" /></a>
+      <a onmouseover="showWMTT('tooltip_list')" onmouseout="hideWMTT()" accesskey="l" href="javascript:AddList()"><img src="images/bbcode/list.jpg" border="0" alt="list" /></a>
+      <a onmouseover="showWMTT('tooltip_quote')" onmouseout="hideWMTT()" accesskey="q" href="javascript:AddQuote()"><img src="images/bbcode/quote.jpg" border="0" alt="Quote" /></a>
+      <a accesskey="c" href="javascript:AddCodetag()"><img src="images/bbcode/code.jpg" border="0" alt="Code" /></a>
+      <a onmouseover="showWMTT('tooltip_toggle')" onmouseout="hideWMTT()" accesskey="t" href="javascript:AddToggle()"><img src="images/bbcode/toggle.jpg" border="0" alt="Toggle" /></a>
+      <img src="images/bbcode/spacer.png" border="0" width="2" alt="separate" />
+      <a href="javascript:AddPhp()"><img src="images/bbcode/phpcode.jpg" border="0" alt="PHP" /></a>
+      <img src="images/bbcode/spacer.png" border="0" width="2" />
+      <a onmouseover="showWMTT('tooltip_hide')" onmouseout="hideWMTT()" href="javascript:AddHide()"><img src="images/bbcode/hide.jpg" border="0" alt="hide" /></a>
+      <a onmouseover="showWMTT('tooltip_anchor')" onmouseout="hideWMTT()" href="javascript:AddAnchor()"><img src="images/bbcode/anchor.jpg" border="0" alt="anchor" /></a>
+	  <div class="tooltip" style="width: 315px; text-align: center;" id="tooltip_email">[EMAIL=you@yoursite.com]My email address[/EMAIL]<br />[EMAIL]you@yoursite.com[/EMAIL]</div>
+	  <div class="tooltip" style="width: 265px; text-align: center;" id="tooltip_url">[URL=http://yoursite.com]My website[/URL]<br />[URL]http://yoursite.com[/URL]</div>
+	  <div class="tooltip" style="width: 250px; text-align: center;" id="tooltip_img">[IMG]http://yoursite.com/image.jpg[IMG]</div>
+      <div class="tooltip" style="width: 150px; text-align: center;" id="tooltip_spacing">[spc=x]x=pixels[/spc]</div>
+      <div class="tooltip" style="width: 150px; text-align: center;" id="tooltip_hide">Hide text from non clan members</div>
+      <div class="tooltip" style="width: 100px; text-align: center;" id="tooltip_anchor">[anchor=text]</div>
+      <div class="tooltip" style="width: 100px; text-align: center;" id="tooltip_caps">ABCDEFG</div>
+      <div class="tooltip" style="width: 100px; text-align: center;" id="tooltip_low">abcdefg</div>
+	  <div class="tooltip" style="width: 310px; text-align: center;" id="tooltip_list">[LIST=a][*]point 1[/*][*]point 2[/*][/LIST]<br />[LIST=1][*]point 1[/*][*]point 2[/*][/LIST]</div>
+	  <div class="tooltip" style="width: 220px; text-align: center;" id="tooltip_quote">[QUOTE=Nickname]Quote[/QUOTE]<br />[QUOTE]Quote[/QUOTE]</div>
+	  <div class="tooltip" style="width: 250px; text-align: center;" id="tooltip_toggle">[TOGGLE=Read more]Full Text[/TOGGLE]</div>
+      <div class="tooltip" style="width: 250px; text-align: center;" id="tooltip_flash">[flash@w=[width]@h=[height]]LINK[/flash]</div>    </td>
+  </tr>
+  <tr> 
+    <td><img src="images/bbcode/style.png" /> <select name="fontcolor" onchange="AddTag('[COLOR=' + document.getElementById('post').fontcolor.options[document.getElementById('post').fontcolor.selectedIndex].value + ']', '[/COLOR]', '')">
+        <option value="0">%color%</option>
+        <option value="#87CEEB" style="color:#87CEEB;">%skyblue%</option>
+        <option value="#4169E1" style="color:#4169E1;">%royalblue%</option>
+        <option value="#0000FF" style="color:#0000FF;">%blue%</option>
+        <option value="#00008B" style="color:#00008B;">%darkblue%</option>
+        <option value="#FFA500" style="color:#FFA500;">%orange%</option>
+        <option value="#FF4500" style="color:#FF4500;">%orangered%</option>
+        <option value="#DC143C" style="color:#DC143C;">%crimson%</option>
+        <option value="#FF0000" style="color:#FF0000;">%red%</option>
+        <option value="#B22222" style="color:#B22222;">%firebrick%</option>
+        <option value="#8B0000" style="color:#8B0000;">%darkred%</option>
+        <option value="#008000" style="color:#008000;">%green%</option>
+        <option value="#32CD32" style="color:#32CD32;">%limegreen%</option>
+        <option value="#2E8B57" style="color:#2E8B57;">%seagreen%</option>
+        <option value="#FF1493" style="color:#FF1493;">%deeppink%</option>
+        <option value="#FF6347" style="color:#FF6347;">%tomato%</option>
+        <option value="#FF7F50" style="color:#FF7F50;">%coral%</option>
+        <option value="#800080" style="color:#800080;">%purple%</option>
+        <option value="#4B0082" style="color:#4B0082;">%indigo%</option>
+        <option value="#DEB887" style="color:#DEB887;">%burlywood%</option>
+        <option value="#F4A460" style="color:#F4A460;">%sandybrown%</option>
+        <option value="#A0522D" style="color:#A0522D;">%sienna%</option>
+        <option value="#D2691E" style="color:#D2691E;">%chocolate%</option>
+        <option value="#008080" style="color:#008080;">%teal%</option>
+        <option value="#C0C0C0" style="color:#C0C0C0;">%silver%</option>
+      </select> 
+	  
+	  <select name="fontsize" onchange="AddTag('[SIZE=' + document.getElementById('post').fontsize.options[document.getElementById('post').fontsize.selectedIndex].value + ']', '[/SIZE]', '')">
+        <option value="0">%size%</option>
+        <option value="1">%tiny%</option>
+        <option value="2">%small%</option>
+        <option value="3">%normal%</option>
+        <option value="4">%large%</option>
+        <option value="5">%huge%</option>
+      </select>
+      
+	  <select name="font" onchange="AddTag('[FONT=' + document.getElementById('post').font.options[document.getElementById('post').font.selectedIndex].value + ']', '[/FONT]', '')">
+        <option value="0">%font%</option>
+        <option value="arial">Arial</option>
+        <option value="comic sans ms">Comic</option>
+        <option value="courier">Courier</option>
+        <option value="courier new">Courier New</option>
+        <option value="tahoma">Tahoma</option>
+        <option value="times new roman">Times New Roman</option>
+        <option value="verdana">Verdana</option>
+      </select>
+      
+      <select name="heading" onchange="AddTag('[HEADING=' + document.getElementById('post').heading.options[document.getElementById('post').heading.selectedIndex].value + ']', '[/HEADING]', '')">
+        <option value="0">Heading</option>
+        <option value="h1">Heading 1</option>
+        <option value="h2">Heading 2</option>
+        <option value="h3">Heading 3</option>
+        <option value="h4">Heading 4</option>
+      </select>
+  	</td>
+  </tr>
+  <tr> 
+    <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+        <a href="javascript:AddTag('[ALIGN=left]', '[/ALIGN]', '')"><img src="images/bbcode/align_left.jpg" border="0" alt="Align left" /></a>
+        <a href="javascript:AddTag('[ALIGN=center]', '[/ALIGN]', '')"><img src="images/bbcode/align_center.jpg" border="0" alt="Align center" /></a>
+        <a href="javascript:AddTag('[ALIGN=right]', '[/ALIGN]', '')"><img src="images/bbcode/align_right.jpg" border="0" alt="Align right" /></a>
+        <a href="javascript:AddTag('[ALIGN=justify]', '[/ALIGN]', '')"><img src="images/bbcode/align_justify.jpg" border="0" alt="Align justify" /></a>
+        <a href="javascript:AddSub()"><img src="images/bbcode/sub.jpg" border="0" alt="Subscript" /></a>
+        <a href="javascript:AddSup()"><img src="images/bbcode/sup.jpg" border="0" alt="Superscript" /></a>
+        <a onmouseover="showWMTT('tooltip_float')" onmouseout="hideWMTT()" href="javascript:AddLeft()"><img src="images/bbcode/float_left.jpg" border="0" alt="Float left" /></a>
+        <a onmouseover="showWMTT('tooltip_float')" onmouseout="hideWMTT()" href="javascript:AddRight()"><img src="images/bbcode/float_right.jpg" border="0" alt="Float right" /></a>
+        <a href="javascript:AddCode('[hr]')"><img src="images/bbcode/horizontal_rule.jpg" border="0" alt="Add HR" /></a>
+        <img src="images/bbcode/spacer.png" border="0" width="2" alt="separate" />
+        <a onmouseover="showWMTT('tooltip_table')" onmouseout="hideWMTT()" href="javascript:AddTable()"><img src="images/bbcode/table.jpg" border="0" alt="Table" /></a>
+        <a onmouseover="showWMTT('tooltip_table')" onmouseout="hideWMTT()" href="javascript:AddRow()"><img src="images/bbcode/table_row.jpg" border="0" alt="Row" /></a>
+        <a onmouseover="showWMTT('tooltip_table')" onmouseout="hideWMTT()" href="javascript:AddCollumn()"><img src="images/bbcode/table_collumn.jpg" border="0" alt="Collumn" /></a>
+        <img src="images/bbcode/spacer.png" border="0" width="2" alt="separate" />
+        <a onmouseover="showWMTT('tooltip_youtube')" onmouseout="hideWMTT()" accesskey="f" href="javascript:AddYoutube()"><img src="images/bbcode/youtube.jpg" border="0" alt="Youtube" /></a>
+        <a onmouseover="showWMTT('tooltip_vimeo')" onmouseout="hideWMTT()" accesskey="v" href="javascript:AddVimeo()"><img src="images/bbcode/vimeo.jpg" border="0" /></a>
+        <a onmouseover="showWMTT('tooltip_myvideo')" onmouseout="hideWMTT()" accesskey="m" href="javascript:AddMyvideo()"><img src="images/bbcode/myvideo.jpg" border="0" alt="Myvideo" /></a>
+        <a accesskey="m" href="javascript:AddGtv()"><img src="images/bbcode/gametrailers.jpg" border="0" alt="Gametrailers" /></a>
+        <a onmouseover="showWMTT('tooltip_wipido')" onmouseout="hideWMTT()" href="javascript:AddWipido()"><img src="images/bbcode/wipido.jpg" border="0" alt="Wipido" /></a>
+        <a onmouseout="hideWMTT()" href="javascript:AddXfire()"><img src="images/bbcode/xfvideo.jpg" border="0" alt="Xfire" /></a>
+        <div class="tooltip" style="width: 250px; text-align: center;" id="tooltip_float">float:left & float:right</div>
+        <div class="tooltip" style="width: 250px; text-align: center;" id="tooltip_table">[table][tr][td]text[/td][/tr][/table]</div>
+        <div class="tooltip" style="width: 250px; text-align: center;" id="tooltip_youtube">[youtube]youtubeID[/youtube]</div>
+        <div class="tooltip" style="width: 250px; text-align: center;" id="tooltip_vimeo">[vimeo]vimeoID[/vimeo]</div>
+        <div class="tooltip" style="width: 250px; text-align: center;" id="tooltip_myvideo">[myvideo]myvideoID[/myvideo]</div>
+        <div class="tooltip" style="width: 250px; text-align: center;" id="tooltip_google">[googlevideo]googlevideoID[/googlevideo]</div>
+        <div class="tooltip" style="width: 250px; text-align: center;" id="tooltip_wipido">[wipido]wipidoID[/wipido]</div>
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>

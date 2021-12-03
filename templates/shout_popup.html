@@ -1,0 +1,17 @@
+<div id="all">
+<div id="TchatPrivate" style="height:200px;overflow:auto; width:100%; float:left;"></div>
+<input type="hidden" id="pseudoPrivate" value="$userID"/>
+<input type="hidden" id="guessPrivate" value="$guess"/>
+<form id="post" name="post">
+<input type="hidden" id="pseudoPrivate" value="$userID"/>
+<input type="hidden" id="guessPrivate" value="$guess"/>
+<div align="center">
+<div id="emo"  style="width:100%;" >
+<a href="javascript:MM_openBrWindow('smileys.php','Smileys','scrollbars=yes,width=340,height=500')">Smilies</a>
+</div>
+<input type="text" class="messagePrivate" id="message" style="width:80%;" maxlength="255" x-webkit-speech speech error onwebkitspeechchange="dosomething.coolhere(true);">
+<input type="submit" id="sendPrivate" value="" style="display:none"/><a style="border:1px solid #CCC; text-decoration:none; background-color:#F2F2F2; color:#666; cursor:pointer; padding:1px;" onclick="envoiPrivate();" style="cursor:pointer;">$send</a><br />
+$admin
+</div>
+</form>
+</div>

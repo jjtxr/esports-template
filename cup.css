@@ -1,0 +1,231 @@
+﻿.win {     
+	background:url(images/cup/icons/win.png) no-repeat;
+        background-size:100% 100%;
+	width:49px;
+	height:19px;	
+        color:#fff;
+	padding-top:4px;
+	text-align:center;
+	overflow:hidden;
+	margin-top:5px;
+
+}
+
+.loss {
+	background:url(images/cup/icons/loss.png) no-repeat;
+	width:49px;
+	height:19px;
+	color:#fff;
+	padding-top:4px;
+	text-align:center;
+	overflow:hidden;
+	margin-top:5px;
+}
+
+.draw {
+	background:url(images/cup/icons/draw.png) no-repeat;
+	width:49px;
+	height:19px;
+	color:#fff;
+	padding-top:4px;
+	text-align:center;
+	overflow:hidden;
+	margin-top:5px;
+}
+
+.title2 {
+  background:#676767 url('images/cup/title_bg.png');
+  padding-bottom:3px;
+  border: 0 none;
+  height: 18px;
+  color:#414141;
+  font-weight: bold; 
+}
+
+#myImage {
+    opacity : 0.5;
+    filter: alpha(opacity=40); // msie
+}
+
+
+#outerdiv
+    {
+    width:100px;
+    height:20px;
+    overflow:hidden;
+    position:relative;
+    }
+
+#inneriframe
+    {
+    position:absolute;
+    top:-372px;
+    left:-210px;
+    width:300px;
+    height:390px;
+    }
+    
+
+//pagination, different styles
+/* -------------------------------------------- */
+/* 		Pagination: Clean						*/
+/* -------------------------------------------- */
+	ul{border:0; margin:0; padding:0;}
+	#pagination-clean li{
+		border:0; margin:0; padding:0;
+		font-size:11px;
+		list-style:none;
+	}
+	#pagination-clean li, #pagination-clean a{
+		border-right:solid 1px #DEDEDE;
+		margin-right:2px;
+	}
+	#pagination-clean .previous-off,
+	#pagination-clean .next-off {
+		color:#888888;
+		display:block;
+		float:left;
+		font-weight:bold;
+		padding:3px 4px;
+	}	
+	#pagination-clean .next a,
+	#pagination-clean previous a{
+		border:none;
+	}	
+	#pagination-clean .active{
+		color:#000000;
+		font-weight:bold;
+		display:block;
+		float:left;
+		padding:4px 6px;
+	}
+	#pagination-clean a:link, 
+	#pagination-clean a:visited {
+		color:#0e509e;
+		display:block;
+		float:left;
+		padding:3px 6px;
+		text-decoration:underline;
+	}
+	#pagination-clean a:hover{
+		text-decoration:none;
+	}
+
+/* -------------------------------------------- */
+/* 		Pagination: Digg Style					*/
+/* -------------------------------------------- */
+	ul{border:0; margin:0; padding:0;}
+
+	#pagination-digg li{
+		border:0; margin:0; padding:0;
+		font-size:11px;
+		list-style:none;
+	}
+	#pagination-digg a{
+		border:solid 1px #DEDEDE;
+		margin-right:2px;
+	}
+	#pagination-digg .previous-off,
+	#pagination-digg .next-off {
+		border:solid 1px #DEDEDE;
+		color:#888888;
+		display:block;
+		float:left;
+
+		margin-right:2px;
+		padding:3px 4px;
+	}
+	#pagination-digg .next a,
+	#pagination-digg .previous a {
+border:solid 1px #FFFFFF;
+
+	}	
+	#pagination-digg .active{
+		background:#2e6ab1;
+		color:#FFFFFF;
+		font-weight:bold;
+		display:block;
+		float:left;
+		padding:4px 6px;
+	}
+	#pagination-digg a:link, 
+	#pagination-digg a:visited {
+		color:#0e509e;
+		display:block;
+		float:left;
+		padding:3px 6px;
+		text-decoration:none;
+	}
+	#pagination-digg a:hover{
+		border:solid 1px #0e509e;
+	}
+
+//general
+	
+.header {
+  background: url(images/bg097.jpg) repeat-y;
+  border:2px #178ccc dashed;
+  color: #fcfc2c;
+  font-size: 10px;
+  width: 510;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.textborder {
+border: 1px solid #1cac00;
+}
+
+.tb_pending {
+border: 1px solid #FF6600;
+}
+
+.cup-matches {
+  background: url(/images/title_bg.gif) repeat;
+  font-size: 10px;
+  width: 100%;
+  padding: 8px;
+  margin-top: 2px;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+.allmatches {
+  background: url(images/bg097.jpg) repeat-y;
+  border:2px #178ccc dashed;
+  color: #fcfc2c;
+  font-size: 10px;
+  width: 510;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.hidden {
+visibility: hidden;
+} 
+
+//teams section
+
+.teams {
+  list-style-type:none;
+}
+.teams li{
+  float: left;
+  margin-right: 5px;
+  padding: 7px;
+  }
+  
+  .contentCont {
+	display: table;
+	position: relative;
+	top: 0px;
+	padding-top: 15px;
+	padding-right: 4px;
+	padding-bottom: 15px;
+	padding-left: 4px;
+	margin: 4px;
+}

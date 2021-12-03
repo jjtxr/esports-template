@@ -1,0 +1,29 @@
+   <form method="post" action="?site=clans">  
+<table width="100%" border="0" cellspacing="$cellspacing" cellpadding="$cellpadding" bgcolor="$border">
+  <tr bgcolor="$bghead">
+    <td colspan="2" height="20" class="title">&nbsp; &#8226; Join Team <a href="?site=clans&action=show&clanID=$ds[ID]"><font color="white"><b>$ds[clantag]</b></font></a></td>
+  </tr>
+
+  <tr>
+    <td colspan="2" bgcolor="$pagebg"></td>
+  </tr>
+  <tr>
+    <td width="150" align="right" bgcolor="$bg1">Team:</td>
+    <td bgcolor="$bg2"><select name="clan">
+$clan</select></td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="$bg1">Password:</td>
+    <td bgcolor="$bg2"><input name="password" type="password" value="$password" class="form_off" id="password" onfocus="this.className='form_on'" onblur="this.className='form_off'" value="" size="30" /></td>
+  </tr>
+  <tr>
+    <td align="right" bgcolor="$bg1"><img src="images/cup/new_message_inv.gif"></td>
+    <td bgcolor="$bg2">&nbsp; <a href="?site=clans&action=show&clanID=$ds[ID]">View/Manage Team</a></td>
+  </tr>
+  <tr bgcolor="$bg1">
+    <td>&nbsp;</td>
+    <td><input name="joinclan" type="submit" id="joinclan" value="Join $ds[name]"></td>
+  </tr>
+
+</table>
+</form>

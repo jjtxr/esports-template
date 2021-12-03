@@ -1,0 +1,15 @@
+<link href="fc_slider/fc_slider.css" rel="stylesheet" type="text/css" media="screen" />
+$jquery
+<script type="text/javascript" src="fc_slider/jquery.fc_slider.1.0.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+		$("#fc_slider_wrap").fc_slider({
+			interval :		$set[pause],
+			anim_time :		$set[trans_time],
+			transition :	'$set[trans_type]',
+			slideshow :		$set[slideshow],
+			pause_hover :	$set[pause_hover]
+		});
+	});
+</script>

@@ -1,0 +1,21 @@
+<form method="post" action="index.php?site=myprofile">
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+  <tr>
+		<td align="right" width="50%">%password%:</td>
+		<td width="50%"><input type="password" name="oldpwd" /></td>
+  </tr>
+  <tr>
+		<td align="right">%new_email%:</td>
+		<td><input type="text" name="mail1" /></td>
+  </tr>
+  <tr>
+		<td align="right">%repeat_new_email%:</td>
+		<td><input type="text" name="mail2" /></td>
+  </tr>
+  <tr>
+  	<td><input type="hidden" name="userid" value="$userID" /></td>
+		<td><input type="submit" name="savemail" value="%change_mail%" /></td>
+  </tr>
+</table>
+</form>
+<br /><br /><input type="button" onclick="javascript:history.back()" value="%back%" />

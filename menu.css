@@ -1,0 +1,7 @@
+/*Example for a Menu Style*/
+.menu { background:url(slice/sidebarh2.png) repeat-x; color:#7a7a7a;height:47px;width:348px; border-top:1px solid #d6d6d6; border-left:1px solid #d6d6d6; border-right:1px solid #d6d6d6;}
+.menu ul {margin:0px; padding:0px; list-style:none; text-align:center;}
+.menu li {display:inline; line-height:47px;}
+.menu li a {color:#7a7a7a; font-size:12px; text-transform:uppercase; text-decoration:none; padding:4px 5px 6px 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.menu li a.tabactive { font-weight:bold;  position:relative; color:#000;}
+#tabcontent1,#tabcontent2,#tabcontent3,#tabcontent4 {height:430px;border-left:1px solid #d6d6d6;border-right:1px solid #d6d6d6; width:348px; padding:0px 0px; font-size:12px; margin-bottom:5px;}

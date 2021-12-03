@@ -1,0 +1,329 @@
+<style>
+/* für alle vernünftigen browser */
+#turnierbaum_div {
+	width:100%;
+	overflow: auto;
+}
+
+/* exploder V6 only */
+* html #turnierbaum_div {
+	overflow-x: scroll;
+    overflow-y: visible;
+}
+
+/* exploder V7 only */
+*+html #turnierbaum_div {
+	overflow-x: scroll;
+    overflow-y: visible;
+}
+</style>
+
+<div style="border:1px silver solid;padding:2px;"><br>
+<div align="center">
+	<font size="2"><b>Cup Brackets</b><br>16 Team Knockout Tournament</font>
+</div>
+<br>
+<br>
+
+<div id="turnierbaum_div">
+	<table align="center" cellpadding="$cellpadding" cellspacing="0" width="100%">
+		<tr valign="top">
+	    	<td width="100" class="title" align="center" colspan="2" class="title" nowrap="nowrap">
+			<b>$round1 </b></td>
+	      	<td width="100" class="title" align="center" colspan="2" class="title" nowrap="nowrap">
+			<b>$round2</b></td>
+	      	<td width="100" class="title" align="center" colspan="2" class="title" nowrap="nowrap">
+			<b>$round_sf_ub</b></td>
+		  	<td width="100" class="title" align="center" colspan="2" class="title" nowrap="nowrap">
+			<b>$round_gf_ub</b></td>
+		  	<td width="100" class="title" align="center" colspan="2" class="title" nowrap="nowrap">
+			<b><span class="title">$winner</span></b></td>
+  	  </tr>
+	    <tr valign="top">
+		    <td bgcolor="$dd[bg1]" align="center" colspan="2" nowrap="nowrap">
+			<b>Map: $dd[map1]</b></td>
+	       	<td bgcolor="$dd[bg1]" align="center" colspan="2" nowrap="nowrap">
+			<b>Map: $dd[map2]</b></td>
+	      	<td bgcolor="$dd[bg1]" align="center" colspan="2" nowrap="nowrap">
+			<b>Map: $dd[map3]</b></td>
+	       	<td bgcolor="$dd[bg1]" align="center" colspan="2" nowrap="nowrap">
+			<b>Map: $dd[map4]</b></td>
+	       	<td bgcolor="$dd[bg1]" align="center" colspan="2" nowrap="nowrap">
+			<b>Map: $dd[map5]</b></td>
+	  	</tr>
+	   	<tr>
+	        <td colspan="9"></td>
+	   	</tr>
+	   	<tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[1]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[1]</td>
+			<td colspan="2"></td>
+	      	<td colspan="2"></td>
+	        <td colspan="2"></td>
+	        <td colspan="2"></td>
+		</tr>
+	    <tr>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[1]</td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[17]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[9]</td>
+	      	<td colspan="2"></td>
+	        <td colspan="2"></td>
+	        <td colspan="2"></td>
+		</tr>
+	    <tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[2]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[1]</td>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td colspan="2"></td>
+	        <td colspan="2"></td>
+	        <td colspan="2"></td>
+		</tr>
+	    <tr>
+	        <td colspan="2"></td>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[9]</td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[25]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[13]</td>
+	        <td colspan="2"></td>
+	        <td colspan="2"></td>
+		</tr>
+	    <tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[3]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[2]</td>
+	       	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	        <td colspan="2"></td>
+	        <td colspan="2"></td>
+		</tr>
+	    <tr>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[2]</td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[18]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[9]</td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	        <td colspan="2"></td>
+	        <td colspan="2"></td>
+		</tr>
+	    <tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[4]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[2]</td>
+	       	<td colspan="2"></td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	        <td colspan="2"></td>
+	        <td colspan="2"></td>
+		</tr>
+	    <tr>
+	        <td colspan="2"></td>
+	        <td colspan="2"></td>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[13]</td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[29]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[15]</td>
+	        <td colspan="2"></td>
+		</tr>
+	    <tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[5]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[3]</td>
+	       	<td colspan="2"></td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	        <td colspan="2"></td>
+		</tr>
+	   	<tr>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[3]</td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[19]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[10]</td>
+			<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	        <td colspan="2"></td>
+		</tr>
+	    <tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[6]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[3]</td>
+	       	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	        <td colspan="2"></td>
+		</tr>
+	    <tr>
+	      	<td colspan="2"></td>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[10]</td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[26]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[13]</td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	        <td colspan="2"></td>
+		</tr>
+	    <tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[7]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[4]</td>
+	   	    <td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td colspan="2"></td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	        <td colspan="2"></td>
+		</tr>
+	   	<tr>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[4]</td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[20]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[10]</td>
+	   	  <td colspan="2"></td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	        <td colspan="2"></td>
+	   	</tr>
+	   	<tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[8]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[4]</td>
+	       	<td colspan="2"></td>
+	      	<td colspan="2"></td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	        <td colspan="2"></td>
+	   	</tr>
+	    <tr>
+	        <td colspan="2"></td>
+	       	<td colspan="2"></td>
+	      	<td colspan="2"></td>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[15]</td>
+	        <td colspan="2" bgcolor="$dd[bg1]" align="center">$clan[wb_winner]</td>
+	    </tr>
+	    <tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[9]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[5]</td>
+	   	    <td colspan="2"></td>
+	      	<td colspan="2"></td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td colspan="2"></td>
+	    </tr>
+	    <tr>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[5]</td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[21]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[11]</td>
+			<td colspan="2"></td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td colspan="2"></td>
+	    </tr>
+	    <tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[10]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[5]</td>
+	       	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td colspan="2"></td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td colspan="2"></td>
+		</tr>
+	   	<tr>
+	        <td colspan="2"></td>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[11]</td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[27]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[14]</td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td colspan="2"></td>
+		</tr>
+	    <tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[11]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[6]</td>
+	   	    <td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	       	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td colspan="2"></td>
+		</tr>
+	    <tr>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[6]</td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[22]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[11]</td>
+			<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	        <td colspan="2" align="center">&nbsp;</td>
+	    </tr>
+	    <tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[12]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[6]</td>
+	       	<td colspan="2"></td>
+	       	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td colspan="2"></td>
+		</tr>
+	    <tr>
+	        <td colspan="2"></td>
+	       	<td colspan="2"></td>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[14]</td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[30]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[15]</td>
+	      	<td colspan="2"></td>
+	    </tr>
+	    <tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[13]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[7]</td>
+	   	    <td colspan="2"></td>
+	       	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	        <td colspan="2"></td>
+	      	<td colspan="2"></td>
+	    </tr>
+	    <tr>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[7]</td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[23]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[12]</td>
+			<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	        <td colspan="2"></td>
+	      	<td colspan="2"></td>
+	    </tr>
+	    <tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[14]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[7]</td>
+	       	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	       	<td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	        <td colspan="2"></td>
+	      	<td colspan="2"></td>
+	    </tr>
+	    <tr>
+	        <td colspan="2"></td>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[12]</td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[28]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[14]</td>
+	        <td colspan="2"></td>
+	        <td colspan="2"></td>
+	    </tr>
+	    <tr>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[15]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[8]</td>
+	   	    <td style="border-right:2px solid $dd[borderbg];" colspan="2">&nbsp;</td>
+	      	<td colspan="2"></td>
+	        <td colspan="2"></td>
+	        <td colspan="2"></td>
+		</tr>
+	    <tr>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[8]</td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[24]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[12]</td>
+			<td colspan="2"></td>
+	        <td colspan="2"></td>
+	        <td colspan="2"></td>
+		</tr>
+	    <tr>
+			<td bgcolor="$dd[bg1]" align="center">$clan[16]</td>
+			<td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%" >$score2[8]</td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
+	    </tr>
+	    <tr>
+	        <td colspan="2"></td>
+	        <td colspan="2"></td>
+	       	<td colspan="2"></td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[31]</td>
+	        <td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score1[16]</td>
+	        <td colspan="2">3rd Place</td>
+		</tr>
+	    <tr>
+	        <td colspan="2"></td>
+	        <td colspan="2"></td>
+	       	<td colspan="2"></td>
+	        <td style="border-right:2px solid $dd[borderbg];" colspan="2" align="center">$detail[16]</td>
+	        <td bgcolor="$dd[bg1]" align="center" colspan="2">$clan[third_winner]</td>
+		</tr>
+	    <tr>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
+			<td colspan="2"></td>
+	        <td bgcolor="$dd[bg1]" align="center">$clan[32]</td>
+			<td bgcolor="$dd[bg2]" style="border-right:2px solid $dd[borderbg];" align="center" width="4%">$score2[16]</td>
+			<td colspan="2"></td>
+	    </tr>   
+	 </table>
+   </div>
+ </div>

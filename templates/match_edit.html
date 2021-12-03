@@ -1,0 +1,35 @@
+<form action="clans&amp;action=match_edit&amp;cupID=$cupID&amp;clanID=$clanID&amp;matchID=$id" method="post" name="post">
+	<table width="100%" border="0" cellspacing="$cellspacing" cellpadding="$cellpadding" >
+		<tr> 
+			<td align="center" class="title">%cup_match_editmatch%</td>
+		</tr>
+        <tr>
+			<td colspan="2" bgcolor="$pagebg"></td>
+        </tr>
+		<tr>
+			<td bgcolor="$bg1">
+				<table width="100%" border="0" align="center" cellpadding="$cellpadding" cellspacing="$cellspacing">
+					<tr> 
+						<td>%cup_matches_server%</td>
+						<td><input name="server" type="text" id="server" value="$server" size="35" /></td>
+					</tr>
+					<tr> 
+						<td>%cup_matches_hltv%</td>
+						<td><input name="hltv" type="text" id="hltv" value="$hltv" size="35" /></td>
+					</tr>
+					<tr> 
+						<td valign="top">%cup_match_report%</td>
+						<td colspan="2" valign="top"><textarea name="report" cols="80" rows="11">$report</textarea></td>
+					</tr>
+					<tr> 
+						<td colspan="3"><hr noshade size="1" color="$border" /></td>
+					</tr>
+					<tr>
+						<td colspan="3" align="right"><input name="report_edit" type="hidden" id="match" value="1" />
+						<input name="post" type="submit" value="%cup_match_save%" /></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</form>

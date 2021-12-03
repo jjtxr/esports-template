@@ -1,0 +1,68 @@
+<script type="text/javascript">
+function chkFormular() {
+	if(document.getElementById('title').value == "") {
+		alert("You forgot to enter video title!");
+		document.getElementById('title').focus();
+   		return false;
+	}	
+}
+</script>
+<form action="index.php?site=videos" method="post" enctype="multipart/form-data" onsubmit="return chkFormular();">
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+  <tr>
+	<td align="center" colspan="2" class="title">Edit video</td>
+  </tr>
+  <tr>
+	<td colspan="2"></td>
+  </tr>
+  <tr>
+	<td width="30%">Title:</td>
+	<td width="70%"><input name="title" type="text" size="35" id="title" value="$title" /></td>
+  </tr>
+  <tr>
+	<td>Category:</td>
+	<td><select name="category">$allcats</select></td>
+  </tr>
+  <tr>
+	<td>Video type</td>
+	<td>$type</td>
+  </tr>
+</table>
+<div id="portal" style="display:$display2;">
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+  <tr>
+	<td width="30%">Video portal:</td>
+	<td width="70%"><select name="portal">$allportals</select></td>
+  </tr>
+  <tr>
+	<td>Video ID:</td>
+	<td><input name="video" type="text" size="20" id="videoID" value="$video" /></td>
+  </tr>
+</table>
+</div>
+<div id="embed" style="display:$display;">
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+  <tr>
+    <td width="30%">Embed code:</td>
+    <td width="70%"><input name="embed" type="text" size="55" value="$embed" /></td>
+  </tr>
+   <tr>
+    <td>Preview picture:</td>
+    <td><input name="vidpreview" type="file" size="40" /></td>
+  </tr>
+</table>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+  <tr>
+	<td width="30%" valign="top">Description:</td>
+	<td width="70%"><textarea name="description" style="width:98%" rows="5">$desc</textarea></td>
+  </tr>
+  <tr>
+	<td>Comments:</td>
+	<td><select name="comments">$comments</select></td>
+  </tr>
+  <tr>
+	<td align="right" colspan="2"><input type="hidden" value="$vidID" name="vidID" /><input type="submit" value="edit" name="saveedit" /></td>
+  </tr>
+</table>
+</form>

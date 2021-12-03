@@ -1,0 +1,2 @@
+RewriteBase /
+ErrorDocument 404 /

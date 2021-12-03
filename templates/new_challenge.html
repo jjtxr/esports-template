@@ -1,0 +1,26 @@
+<form method="post" name="newchallenge" action="">
+ <table width="100%" border="0" cellspacing="$cellspacing" cellpadding="$cellpadding" bgcolor="$border">
+  <tr bgcolor="$bghead">
+    <td colspan="7" class="title">&nbsp; &#8226; New challenge on $laddname against $opponent</td>
+  </tr>
+  	<tr>
+      <td bgcolor="$bg1">Challenging:</td>
+	  <td bgcolor="$bg2"><b>$opponent</b> (<a href="?site=standings&action=newchallenge&laddID=$ladID">change?</a>)</td>
+    </tr>
+     <tr>
+      <td bgcolor="$bg1" rowspan="2">Server:<br>$opponent can change?</td>
+      <td bgcolor="$bg2"><input name="server" maxlength="22">:<input name="port" maxlength="6" size="6"></td>
+    </tr>
+     <tr>
+      <td bgcolor="$bg2"><input type="checkbox" name="serverc" value="1"> (if entered above)</td>
+    </tr>
+     <tr>
+      <td bgcolor="$bg1">Info:</td>
+      <td bgcolor="$bg2"><textarea rows="4" name="info" cols="50"></textarea></td>
+   </tr>
+    <tr bgcolor="$bg1">
+	 <td style="padding:2px 3px 2px 3px;">&nbsp;</td>
+	 <td style="padding:2px 3px 2px 3px;"><input name="newchallenge" type="submit" id="newchallenge" value="Confirm Challenge"><input name="challenger" type="hidden" value="$challenger"></td>
+   </tr>
+ </table>
+</form>

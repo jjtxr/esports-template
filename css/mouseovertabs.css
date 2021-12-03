@@ -1,0 +1,80 @@
+/* ######### CSS for top level tabs ######### */
+
+.tabsmenuclass ul{
+
+	height:46px;
+overflow: hidden;
+width: auto;
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.tabsmenuclass li{
+float: left;
+margin:0 10px;
+background: url(../slice/navbuttonbg.png) no-repeat center bottom;
+padding-top:10px;
+
+text-align:center;
+color:#fff;
+
+}
+
+
+.tabsmenuclass ul li a{
+display: block;
+padding:5px;
+
+
+color: #fff;
+margin-right: 1px;
+text-decoration: none;
+text-transform:uppercase;
+text-shadow: 1px 1px 1px #000;
+        filter: dropshadow(color=#BFC3C6, offx=1, offy=1);
+				 font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+	font-size:14px;
+}
+
+.tabsmenuclass a:hover, .tabsmenuclass a.selected{
+	color:#FF853D;
+	
+
+	text-shadow: 1px 1px 1px #000;
+        filter: dropshadow(color=#BFC3C6, offx=1, offy=1);
+		
+
+
+}
+
+/* ######### CSS for sub menu container below ######### */
+
+.tabsmenucontentclass{
+clear: left;
+background: no-repeat;
+height: 35px;
+}
+
+.tabsmenucontentclass ul{
+margin: 0;
+padding: 0 10px;
+list-style-image:url(../slice/bullet.png);
+list-style-position:inside;
+height:32px;
+}
+
+.tabsmenucontentclass li{
+	
+line-height:32px;
+float: left;
+margin-right: 1em;
+}
+.tabsmenucontentclass ul li a {
+	color:#fff;
+text-shadow: 1px 1px 1px #000;
+        filter: dropshadow(color=#BFC3C6, offx=1, offy=1);
+}
+.tabsmenucontentclass ul li a:hover {
+color:#787878;}

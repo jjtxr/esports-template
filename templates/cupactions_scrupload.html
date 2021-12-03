@@ -1,0 +1,72 @@
+<script>
+function addRow2(action)
+{
+	var theAction = action;
+  var table = document.getElementById('screenlist');
+  var theRows = table.rows.length;
+  var inkrement = theRows;
+  var row = table.insertRow(theRows);
+	
+	// gibt nen text wie "map #1" aus
+	var cell0 = row.insertCell(0);
+	var textNode = document.createTextNode('Screenshot #' + inkrement);
+	cell0.appendChild(textNode);
+	// mapname
+  var cell1 = row.insertCell(1);
+  var ele1 = document.createElement('input');
+		ele1.setAttribute('type', 'text');
+		ele1.setAttribute('name', 'screen_name[]');
+		ele1.setAttribute('id', 'screen_name_' + inkrement);
+		ele1.setAttribute('size', '25');
+		ele1.className='form_off';
+  cell1.appendChild(ele1);
+  
+  var cell1 = row.insertCell(2);
+  var ele1 = document.createElement('input');
+		ele1.setAttribute('type', 'file');
+		ele1.setAttribute('name', 'screenshots[]');
+		ele1.setAttribute('id', 'screen_' + inkrement);
+		ele1.setAttribute('size', '20');
+		ele1.className='form_off';
+  cell1.appendChild(ele1);  
+ 
+	// create delete-selection for edit-function
+		var cell4 = row.insertCell(4);
+}
+
+// function removeRow() ** removes the last row of a table
+function removeRow2()
+{
+  var table = document.getElementById('screenlist');
+  var theRows = table.rows.length;
+  if (theRows != 1) table.deleteRow(theRows - 1);
+}
+</script>
+<form action="?site=cupactions&action=screenupload&$typename2=$cupID&matchID=$matchID&clanID=$clanID" method="post" name="post" enctype="multipart/form-data">
+	<table width="100%" cellspacing="$cellspacing" border="0" cellpadding="$cellpadding" bgcolor="$border">
+		<tr> 
+		  <td align="center" class="title" colspan="2">%screen_upload_title%</td>
+		</tr>
+		<tr>
+			<td bgcolor="$pagebg" colspan="5"></td>
+		</tr>
+		<tr bgcolor="$bg1"> 
+			<td>
+				<table width="100%" id="screenlist">
+					<tr>
+						<td width="18%">Screenshot ID:</td>
+						<td width="30%">Screenshot-Name:</td>
+						<td width="42%">Screenshot:</td>
+						<td>
+							<a href="javascript:;" onClick="addRow2();" title="add map"><img src="images/icons/expand.gif" border="0"></a>
+							<a href="javascript:;" onClick="removeRow2();" title="remove map"><img src="images/icons/collapse.gif" border="0"></a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr bgcolor="$bg2" align="right">
+			 <td><input name="submit" type="submit" value="%screen_upload_button%"></td>
+		</tr> 
+	</table>
+</form>

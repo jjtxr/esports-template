@@ -1,0 +1,84 @@
+<!--hier kannst du die Farbe des Captchas anpassen, wähle eine folgender Themes:
+'red','white','blackglass','clean','custom' | weitere Infos zum anpassen des Styles bzw. auch individueller Styles findest du auf www.recaptcha.net-->
+<script>
+var RecaptchaOptions = {
+   theme : 'clean',
+   tabindex : 2
+};
+</script>
+<form method="post" name="post" action="index.php?site=register">
+<center>$showerror</center>
+<ol id="step">
+	<li>
+
+		<h3>%personal_info%</h3>
+		<p><table width="90%" border="0" cellspacing="0" cellpadding="0">
+  	 <tr>
+    <td width="26%" align="left" class="border_1">%firstname%:</td>
+    <td width="74%" class="border_1"><input type="text" name="firstname" value="$firstname"  maxlength="30" size="30" /></td>
+  </tr>
+  <tr>
+    <td class="border_1" align="left">%lastname%:</td>
+    <td class="border_1"><input type="text" name="lastname" value="$lastname"  maxlength="30" size="30" /></td>
+  </tr>
+  </tr>
+    <td class="border_1" align="left">%sexuality%:</td>
+    <td class="border_1"><input class="input" type="radio" name="sex" value="m" > %male%
+        <input class="input" type="radio" name="sex" value="f"> %female%</td>
+    </tr>
+  <tr>
+    <td class="border_2"  align="left">%country%:</td>
+    <td class="border_2"><select name="country">$countries</select></td>
+    </tr>
+  <tr>
+		</table>
+		</p>
+	</li>
+	<li>
+		<h3>%account_info%</h3>
+		<p><table width="90%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="26%" align="left" class="border_1">%nickname%:</td>
+    <td width="74%" class="border_1"><input type="text" name="nickname" value="$nickname"  maxlength="30" size="30" /></td>
+  </tr>
+  <tr>
+    <td class="border_1" align="left">%username%:</td>
+    <td class="border_1"><input type="text" name="username" value="$username" size="30" /> <small>(%for_login%)</small></td>
+  </tr>
+  <tr>
+    <td class="border_1" align="left">%password%:</td>
+    <td class="border_1"><input type="password" name="pwd1" value="$pwd1" size="30" /></td>
+  </tr>
+  <tr>
+    <td class="border_1" align="left">%repeat%:</td>
+    <td class="border_1"><input type="password" name="pwd2" value="$pwd2" size="30" /></td>
+  </tr>
+    <tr>
+    <td class="border_1" align="left">%mail%:</td>
+    <td class="border_1"><input type="text" name="mail" value="$mail" size="30" /></td>
+  </tr>
+    <tr>
+    <td class="border_2" align="left">%homepage%:</td>
+    <td class="border_2"><input type="text" name="homepage" value="$homepage" size="30" /></td>
+  </tr>
+  <tr>
+		</table>
+        </p>
+
+	</li>
+
+	<li>
+		<h3>%captcha_info%</h3>
+	  <p><table width="90%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+    <td width="88%" align="left" style="font-size: 11px;">%captcha_txt%</td>
+    </tr>
+    <tr>
+      <td align="center" class="border_2">$recaptcha</td>
+    </tr>
+		</table>
+        </p>
+	</li>
+    <div align="center"><input name="save" type="submit" value="%register_now%" /></div>
+</ol>
+</form>

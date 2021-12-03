@@ -1,0 +1,21 @@
+<div id="all">
+<div id="Tchat" style="height:200px;overflow:auto; width:80%; float:left;"></div>
+<ul id="users" style="overflow:auto; height:200px; margin:0; padding:5px;"></ul>
+<form id="post" name="post" method="post" action="">
+<input type="hidden" id="pseudo" value="$userID"/>
+
+<!-- CUP INTEGRATION -->
+<input type="hidden" id="type" value="$type"/>
+<input type="hidden" id="channelID" value="$channelID"/>
+<!--!CUP INTEGRATION -->
+
+<div align="center">
+<div id="emo"  style="width:100%;" >
+<a href="javascript:MM_openBrWindow('smileys.php','Smileys','scrollbars=yes,width=340,height=500')">Smilies</a>
+</div>
+<input type="text" class="message" id="message" style="width:80%;" maxlength="255" x-webkit-speech speech error onwebkitspeechchange="dosomething.coolhere(true);">
+<input type="submit" id="send" value=" $send" /><br />
+$admin <a onclick="allMsg();" style="cursor:pointer;">%allMessage%</a>
+</div>
+</form>
+</div>

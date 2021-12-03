@@ -1,0 +1,76 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td class="title">&nbsp;%userinformations%<hr></td><hr>
+  </tr>
+  <tr><td></td></tr>
+  <tr>
+    <td>
+    <table width="100%" border="0" cellspacing="1" cellpadding="2">
+      <tr>
+        <td width="20%">%user%:</td>
+        <td width="30%">$username</td>
+        <td width="1%"></td>
+        <td width="20%">%messenger%:</td>
+        <td><a href="index.php?site=messenger">$newmessages</a></td>
+      </tr>
+      <tr>
+        <td>%last_login%:</td>
+        <td>$lastlogin</td>
+        <td></td>
+        <td>%new_topics%:</td>
+        <td>$new_topics</td>
+      </tr>
+      <tr>
+        <td>%registered%:</td>
+        <td>$registerdate</td>
+        <td></td>
+        <td>%new_posts%:</td>
+        <td>$new_posts</td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+  $referer_uri
+  <tr><td></td></tr>
+  <tr>
+    <td class="title">&nbsp;%usermenu%<hr></td>
+  </tr>
+  <tr><td></td></tr>
+  <tr>
+    <td align="center">
+		<div class="horizontal">
+			<ul>
+				<li><a href="index.php?site=buddys"><img src="images/icons/buddys.gif" border="0" alt="Buddys" /></a></li>
+				<li><a href="index.php?site=messenger"><img src="images/icons/messenger.gif" border="0" alt="Messenger" /></a></li>
+				<li>$admincenterpic</li>
+				<li><a href="index.php?site=myprofile"><img src="images/icons/edit_profil.gif" border="0" alt="Edit Profil" /></a></li>
+				<li><a href="logout.php"><img src="images/icons/logout.gif" border="0" alt="Logout" /></a></li>
+			</ul>
+		</div>	
+		<br /><br />
+    </td>
+  </tr>
+  <tr><td></td></tr>
+  <tr>
+    <td class="title">&nbsp;%new_in_forum%<hr></td>
+  </tr>
+  <tr><td></td></tr>
+  <tr>
+    <td width="50%">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr valign="top">
+        <td width="50%"><img src="images/icons/latest_topics.gif" alt="Latest Topics" border="0" /><br /><br />
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          $topiclist
+        </table>
+        </td>
+        <td width="50%"><img src="images/icons/latest_posts.gif" alt="Latest Posts" border="0" /><br /><br />
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          $postlist
+        </table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,113 @@
+div.myprofile{
+	position: relative;
+	float: left;
+	clear: both;
+	width: 100%;
+	color: #616161;
+}
+div.st_vertical div.st_tabs_container{
+	position: relative;
+	z-index: 100;
+	float: left;
+	width: 190px;
+	height: 337px;
+	margin-right: -1px;
+	border-top: 1px solid #d4d4d4;
+	overflow: hidden;
+}
+div.st_vertical div.st_slide_container{
+	position: relative!important;
+	float: left;
+	clear: both;
+}
+div.st_vertical ul.st_tabs{
+	float: left;
+	width: 195px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.st_vertical ul.st_tabs li{
+	float: left;
+	clear: both;
+}
+div.st_vertical ul.st_tabs li a{
+	display: block;
+	width: 178px;
+	height: 35px;
+	font-size: 11px;
+	color: #838383;
+	font-weight: 700;
+	line-height: normal;
+	text-decoration: none;
+	outline: none;
+	border-right: 1px solid #d4d4d4;
+	border-bottom: 1px solid #d4d4d4;
+	border-left: 1px solid #d4d4d4;
+	background: #fff;
+	margin: 0;
+	padding: 6px 0 20px 10px;
+	box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+}
+div.st_vertical ul.st_tabs li a span{
+	display: block;
+	clear: both;
+	font-weight: 400;
+	color: #B2B1B1;
+	padding-top: 3px;
+	padding-right: 5px;
+}
+div.st_vertical ul.st_tabs a:hover{
+	color:#333;
+}
+div.st_vertical ul.st_tabs a.st_tab_active{
+	position: relative;
+	z-index: 10;
+	color: #12ABC2;
+	padding-right: 1px;
+	background: #fff;
+}
+div.st_vertical div.st_view_container{
+	position: relative;
+	z-index: 5;
+	height: 480px;
+	line-height: 18px;
+	border: 1px solid #d4d4d4;
+	background-color: #fff;
+	overflow: hidden;
+	padding: 10px;
+	box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+}
+div.st_vertical div.st_view{
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+div.st_vertical div.st_tab_view{
+	width: 100%;
+	background-color: #fff;
+}
+div.st_vertical div.st_view h2{
+	font-size: 16px;
+	color: #454545;
+	margin: 0 0 16px;
+	padding: 0;
+}
+div.st_vertical div.st_view p{
+	margin: 3px 0 0;
+	padding: 0;
+}
+.tab_1 {
+	padding: 4px;
+	border: none;
+	background: #FFFFFF;
+}
+.tab_2 {
+	padding: 4px;
+	background: #FFFFFF;
+	border-bottom: 1px solid #CECED1;
+}
